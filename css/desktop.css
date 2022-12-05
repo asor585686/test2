@@ -1,0 +1,507 @@
+@media (min-width: 1025px) {
+    .main-header {
+        align-items: start;
+        justify-content: center;
+        border-bottom: none;
+        border-right: 1px solid #1F4DFC;
+        height: 100%;
+        padding: 23px 0 0;
+        width: 81px;
+        box-sizing: border-box;
+        z-index: 1;
+        position: relative;
+    }
+
+    .logo {
+        height: 33px;
+        width: 33px;
+        margin: auto;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .home-prompt {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80px;
+        /* height: calc(100% - 150px); */
+        height: 100%;
+        cursor: pointer;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .language-toggle {
+        position: absolute;
+        bottom: 35px;
+        left: 46px;
+        display: block;
+        transform-origin: left bottom;
+        transform: rotate(270deg);
+        z-index: 3;
+    }
+
+    .language-toggle a {
+        opacity: 0.7;
+        position: relative;
+        padding: 10px;
+        margin: -10px;
+        margin-right: 27px;
+    }
+
+    .language-toggle a.is-active {
+        opacity: 1;
+    }
+
+    .language-toggle a.is-active:after {
+        background-color: #1F4DFC;
+        border-radius: 6px;
+        content: '';
+        position: absolute;
+        right: 0px;
+        top: 50%;
+        padding: 3px;
+        margin: -3px;
+    }
+
+    main {
+        position: absolute;
+        top: 0;
+        left: 80px;
+        bottom: 0;
+        right: 0;
+        overflow: hidden;
+    }
+
+    nav.is-active {
+        display: none;
+    }
+
+    section {
+        position: absolute;
+        display: flex;
+        left: 0;
+        top: 0;
+        min-height: 100%;
+        width: calc(100vw - 6 * 80px);
+        padding-top: 0;
+        transform: translateX(100%);
+        background: #000;
+    }
+
+    #first {
+        left: calc(80px * 1);
+    }
+    #second {
+        left: calc(80px * 2);
+    }
+    #third {
+        left: calc(80px * 3);
+    }
+    #fourth {
+        left: calc(80px * 4);
+    }
+    #fifth {
+        left: calc(80px * 5);
+    }
+
+    section:first-child {
+        border-left: none;
+    }
+
+    .section-header {
+        position: absolute;
+        top: 0;
+        left: -80px;
+        display: block;
+        height: 100vh;
+        width: 80px;
+        cursor: pointer;
+        box-sizing: border-box;
+        background: #000;
+        border-left: 1px solid #1F4DFC;
+    }
+
+    .section-header .title {
+        position: absolute;
+        bottom: 35px;
+        left: calc(50% - 10px);
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+    }
+
+    .section-header .number {
+        position: absolute;
+        top: 35px;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        overflow: auto;
+        height: 100vh;
+        opacity: 0;
+        transition: 0.5s opacity;
+    }
+
+    section.active .container {
+        opacity: 1;
+    }
+
+    section .animation {
+        align-items: center;
+        border-bottom: 0;
+        display: flex;
+        flex: 1;
+        max-width: 50%;
+        justify-content: center;
+        padding-right: 80px;
+    }
+
+    section .content {
+        border-left: 1px solid #1F4DFC;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
+    section .introduction {
+        padding: 315px 55px 75px;
+    }
+
+    section .section-body {
+        border-top: 1px solid #1F4DFC;
+        display: flex;
+        align-items: start;
+        flex-grow: 1;
+    }
+
+    section .static-image-container {
+        flex: 1;
+    }
+
+    section .static-image-container svg {
+        width: 50%;
+        margin: 275px auto 0;
+        display: block;
+    }
+
+    section .section-body-copy {
+        border-left: 1px solid #1F4DFC;
+        flex: 2;
+        padding: 55px 55px;
+        min-height: 100%;
+    }
+
+    section .point {
+        position: relative;
+        display: flex;
+        border-bottom: 1px solid #1F4DFC;
+    }
+    section .point-number {
+        width: 25%;
+        padding: 45px 0;
+        text-align: center;
+        flex-shrink: 0;
+        border-right: 1px solid #1F4DFC;
+    }
+    section .point-content {
+        padding-left: 45px;
+        flex-grow: 1;
+    }
+    section .point-content .point-title {
+        position: relative;
+        padding: 45px 0;
+        padding-right: 70px;
+    }
+    section .point-content ul {
+        margin-left: 18px;
+        padding-bottom: 45px;
+        display: none;
+    }
+    section .point-content li {
+        margin-bottom: 15px;
+    }
+    section .point-toggle {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        cursor: pointer;
+    }
+    section .point-toggle .icon {
+        position: absolute;
+        top: 50%;
+        right: 40px;
+        padding: 30px;
+        margin: -30px;
+    }
+    section .point-toggle .line1,
+    section .point-toggle .line2 {
+        background: #fff;
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+    section .point-toggle .line1 {
+        width: 24px;
+        height: 1px;
+    }
+    section .point-toggle .line2 {
+        width: 1px;
+        height: 24px;
+    }
+
+    section .point.is-active {
+    }
+    section .point.is-active .point-content ul {
+        display: block;
+    }
+    section .point.is-active .point-toggle .line2 {
+        display: none;
+    }
+
+    #third .section-body {
+        display: block;
+    }
+
+    #first .section-body,
+    #fourth .section-body {
+        flex-direction: row-reverse;
+    }
+
+    #first .section-body-copy,
+    #fourth .section-body-copy {
+        border-left: none;
+        border-right: 1px solid #1F4DFC;
+    }
+
+    section .section-body-copy p:first-child {}
+
+    section .section-body-copy p:first-child:before {
+        border-radius: 8px;
+        content: '';
+        left: 4px;
+        position: absolute;
+        top: 14px;
+        padding: 4px;
+        margin: -4px;
+    }
+
+    section:not(.home) .animation {
+        padding-right: 80px;
+    }
+
+    #fifth .animation {
+        padding: 0;
+    }
+
+    section:not(.home) .animation svg {
+        height: auto;
+        max-width: 60vh;
+    }
+
+    #fourth .animation svg {
+        width: 90%;
+        max-width: 40vh;
+    }
+
+    #fifth .animation {
+        width: 100%;
+    }
+
+    #fifth .animation svg {
+        max-width: none;
+    }
+
+    .home {
+        transform: none;
+        width: calc(100vw - 6 * 80px);
+    }
+
+    .home .container {
+        flex-direction: column;
+    }
+
+    .home .top {
+        align-items: stretch;
+        display: flex;
+        flex: 1;
+        min-height: 350px;
+    }
+
+    .home .animation {
+        align-items: center;
+        align-content: center;
+        border-bottom: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow: hidden;
+        padding: 100px;
+    }
+
+    .home .animation svg path {
+        transform-origin: center;
+        opacity: 0;
+    }
+
+    .home .animation.left svg {
+        flex: 1;
+    }
+
+    .home .animation.right svg {
+        flex: 0 50%;
+        margin: -1%;
+    }
+
+    .home .top > div:first-child {
+        border-right: 1px solid #1F4DFC;
+    }
+
+    .home .details {
+        align-items: flex-end;
+        border-top: 1px solid #1F4DFC;
+        height: 230px;
+        padding: 80px 50px 50px 80px;
+    }
+
+    .home .details p {
+        display: inline-block;
+        margin-bottom: 50px;
+        margin-right: 531px;
+    }
+    .home .details p:nth-child(2) {
+        margin-right: 0;
+        padding: 0;
+        margin-bottom: 50px;
+    }
+
+    #fifth .content {
+        justify-content: flex-end;
+    }
+
+    section .email,
+    section .links {
+        height: 120px;
+    }
+
+    section .email {
+        padding-left: 0;
+    }
+
+    section .links {
+        border-bottom: none;
+    }
+
+    section .links a,
+    section .email a {
+        line-height: 120px;
+        position: relative;
+    }
+
+    section .email a {
+        padding-left: 28px;
+        flex-grow: 1;
+    }
+
+    section .email a:after,
+    section .links a:after {
+        border-radius: 100px;
+        content: '';
+        position: absolute;
+        right: 53px;
+        top: 50%;
+        padding: 12px;
+        margin: -12px;
+        border: 1px solid #1F4DFC;
+        opacity: 0;
+    }
+
+    section .email a:hover:after,
+    section .links a:hover:after {
+        opacity: 1;
+    }
+
+    section .point-header {
+        height: 120px;
+    }
+
+    section .point-header .number {
+        width: 150px;
+    }
+
+    footer {
+        display: none;
+    }
+
+    #fifth .introduction p {
+        width: 200px;
+    }
+
+    section .email,
+    section .links {
+        align-items: center;
+        display: flex;
+        height: 120px;
+    }
+
+    section .email {
+        border-top: 1px solid #1F4DFC;
+        border-bottom: 1px solid #1F4DFC;
+        padding-left: 0;
+    }
+
+    section .links {
+        border-bottom: none;
+    }
+
+    section .links a,
+    section .email a {
+        line-height: 120px;
+        position: relative;
+        padding-left: 55px;
+    }
+
+    section .links a {
+        display: block;
+        flex: 1;
+        height: 100%;
+    }
+
+    section .links a:first-child {
+        border-right: 1px solid #1F4DFC;
+    }
+
+    section .email a {
+        flex-grow: 1;
+    }
+
+    section .email a:after,
+    section .links a:after {
+        border-radius: 100px;
+        content: '';
+        position: absolute;
+        right: 53px;
+        top: 50%;
+        padding: 12px;
+        margin: -12px;
+        border: 1px solid #1F4DFC;
+        opacity: 0;
+    }
+
+    section .email a:hover:after,
+    section .links a:hover:after {
+        opacity: 1;
+    }
+}

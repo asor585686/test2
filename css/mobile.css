@@ -1,0 +1,406 @@
+@media (max-width: 1024px) {
+    header {
+        align-items: center;
+        display: flex;
+        height: 55px;
+        justify-content: space-between;
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    .main-header {
+        background-color: #000000;
+        border-bottom: 1px solid #ffffff;
+        position: fixed;
+        z-index: 2;
+    }
+
+    .language-toggle {
+        display: none;
+    }
+
+    .home-prompt {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: calc(100% - 120px);
+    }
+
+    nav {
+        background-color: #000000;
+        display: none;
+        height: calc(100vh - 55px);
+        position: absolute;
+        top: 55px;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .menu-open main {
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .menu-open footer {
+        display: none;
+    }
+
+    .menu-open nav {
+        display: block;
+    }
+
+    nav button {
+        border-bottom: 1px solid #ffffff;
+        display: block;
+        height: 100px;
+        padding-left: 20px;
+        width: 100%;
+        text-align: inherit;
+    }
+
+    nav .number {
+        margin-right: 30px;
+    }
+
+    section {
+        background-color: #000000;
+        border-top: 1px solid #ffffff;
+        color: #ffffff;
+        display: none;
+        padding-top: 55px;
+    }
+
+    section.active {
+        border-top: none;
+        display: block;
+    }
+
+    .logo {
+        height: 24px;
+        width: 24px;
+    }
+
+    .logo img {
+        height: 100%;
+        width: 100%;
+    }
+
+    section .number {
+        margin-right: 5px;
+    }
+
+    section:not(.home) .animation {
+    }
+
+    #fifth .animation {
+    }
+
+    section:not(.home) .animation svg {
+        display: block;
+        padding: 40px 0 60px;
+        width: 65%;
+        height: auto;
+        margin: auto;
+    }
+
+    #fourth .animation svg {
+        width: 45%;
+        padding: 0 0 30px;
+    }
+
+    #fifth .animation svg {
+        width: 100%;
+        height: 110vw;
+        padding: 0;
+        margin-top: -55px;
+    }
+
+    .home .container {
+        flex-direction: column;
+    }
+
+    .home .top {
+        align-items: stretch;
+        display: flex;
+        flex: 1;
+        min-height: 350px;
+    }
+
+    .home .top > div {
+        flex: 1;
+    }
+
+    .home .top > div:first-child {
+        border-right: 1px solid #ffffff;
+    }
+
+    .home .details {
+        display: none;
+    }
+
+    .home .animation {
+        align-items: center;
+        align-content: center;
+        border-bottom: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow: hidden;
+        padding: 30px;
+    }
+
+    .home .animation svg path {
+        transform-origin: center;
+        opacity: 0;
+    }
+
+    .home .animation.left svg {
+        flex: 1;
+    }
+
+    .home .animation.right svg {
+        flex: 0 50%;
+        margin: -1px;
+    }
+
+    section .animation {
+        border-bottom: 1px solid #ffffff;
+    }
+
+    section .animation canvas {
+        display: block;
+    }
+
+    section .introduction {
+        border-bottom: 1px solid #ffffff;
+        padding: 100px 28px;
+    }
+
+    #fifth .introduction {
+        padding: 125px 28px 30px;
+    }
+
+    #fifth .introduction p {
+        width: 90px;
+    }
+
+    section .section-body {
+        display: flex;
+        flex: 1;
+    }
+
+    section .static-image-container {
+        border-right: 1px solid #ffffff;
+        padding: 160px 20px 0;
+    }
+
+    section .static-image-container svg {
+        width: 50px;
+    }
+
+    section .section-body-copy {
+        padding: 50px 40px;
+    }
+
+    section .section-body-copy p:first-child {
+        position: relative;
+        text-indent: 55px;
+    }
+
+    section .section-body-copy p:first-child:before {
+        background-color: #ffffff;
+        border-radius: 8px;
+        content: '';
+        height: 8px;
+        left: 0;
+        position: absolute;
+        top: 7px;
+        width: 8px;
+    }
+
+    section .email,
+    section .links {
+        align-items: center;
+        display: flex;
+        height: 80px;
+    }
+
+    section .email {
+        border-bottom: 1px solid #ffffff;
+        padding-left: 28px;
+    }
+
+    section .links a {
+        display: block;
+        flex: 1;
+        height: 100%;
+        line-height: 80px;
+        padding-left: 28px;
+    }
+
+    section .links a:first-child {
+        border-right: 1px solid #ffffff;
+    }
+
+    section .point {
+        position: relative;
+        display: flex;
+        border-top: 1px solid #fff;
+    }
+    section .point-number {
+        width: 25%;
+        padding: 45px 0;
+        text-align: center;
+        flex-shrink: 0;
+        border-right: 1px solid;
+    }
+    section .point-content {
+        padding-left: 45px;
+        flex-grow: 1;
+    }
+    section .point-content .point-title {
+        position: relative;
+        padding: 45px 0;
+        padding-right: 70px;
+    }
+    section .point-content ul {
+        margin-left: 18px;
+        padding-bottom: 45px;
+        display: none;
+    }
+    section .point-content li {
+        margin-bottom: 15px;
+    }
+    section .point-toggle {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        cursor: pointer;
+    }
+    section .point-toggle .icon {
+        position: absolute;
+        top: 50%;
+        right: 40px;
+        padding: 30px;
+        margin: -30px;
+    }
+    section .point-toggle .line1,
+    section .point-toggle .line2 {
+        background: #fff;
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+    section .point-toggle .line1 {
+        width: 24px;
+        height: 1px;
+    }
+    section .point-toggle .line2 {
+        width: 1px;
+        height: 24px;
+    }
+
+    section .point.is-active {
+    }
+    section .point.is-active .point-content ul {
+        display: block;
+    }
+    section .point.is-active .point-toggle .line2 {
+        display: none;
+    }
+
+    #third .introduction {
+        border: 0;
+    }
+    #third .section-body {
+        display: block;
+    }
+
+    footer {
+        border-top: 1px solid #ffffff;
+        padding: 56px 28px;
+    }
+
+    footer p {
+        margin-bottom: 28px;
+    }
+
+    /*
+ * Hamburger menu adapted from https://github.com/jonsuh/hamburgers
+ */
+    .hamburger {
+        color: #ffffff;
+        display: inline-block;
+        cursor: pointer;
+        transition-property: opacity, filter;
+        transition-duration: 0.15s;
+        transition-timing-function: linear;
+        text-transform: none;
+        background-color: transparent;
+        border: 0;
+        margin: 0;
+        overflow: visible;
+        padding: 18px;
+        margin: -18px;
+    }
+
+    .hamburger.is-active .hamburger-inner,
+    .hamburger.is-active .hamburger-inner::after {
+        background-color: #ffffff;
+    }
+
+    .hamburger label {
+        cursor: pointer;
+        margin-right: 18px;
+    }
+
+    .hamburger.is-active label {
+        display: none;
+    }
+
+    .hamburger-box {
+        width: 14px;
+        height: 14px;
+        display: inline-block;
+        position: relative;
+    }
+
+    .hamburger-inner {
+        display: block;
+        top: 50%;
+    }
+
+    .hamburger-inner,
+    .hamburger-inner::after {
+        width: 14px;
+        height: 1px;
+        background-color: #ffffff;
+        position: absolute;
+        transition-property: transform;
+        transition-duration: 0.15s;
+        transition-timing-function: ease;
+    }
+
+    .hamburger-inner::after {
+        content: '';
+        display: block;
+    }
+
+    .hamburger--slider .hamburger-inner {
+        top: 5px;
+    }
+
+    .hamburger--slider .hamburger-inner::after {
+        top: 7px;
+    }
+
+    .hamburger--slider.is-active .hamburger-inner {
+        transform: translate3d(0, 4px, 0) rotate(45deg);
+    }
+
+    .hamburger--slider.is-active .hamburger-inner::after {
+        transform: translate3d(0, -7px, 0) rotate(-90deg);
+    }
+}

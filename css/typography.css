@@ -1,0 +1,91 @@
+
+body {
+    font-size: 14px;
+    font-family: 'Galmuri9';
+    font-style: normal;
+    font-stretch: normal;
+
+}
+
+p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+button {
+    font-size: 12px;
+    color: #1F4DFC;
+}
+
+nav button {
+    font-size: 16px;
+    
+}
+
+.language-toggle {
+    font-size: 12px;
+}
+
+.introduction p {
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.point,
+.email,
+.links {
+    font-size: 16px;
+}
+
+@media (min-width: 1025px) {
+    body {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 46px;
+    }
+
+    section {
+        font-size: 12px;
+    }
+
+    .section-header {
+        font-size: 14px;
+        color: #1F4DFC;
+    }
+    .section-header .number {
+        font-weight: bold;
+    }
+    .detailsp1{
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    #third .introduction p,
+    #fifth .introduction p {
+    }
+
+    .point-header {
+        font-size: 24px;
+    }
+
+    .email {
+        font-size: 24px;
+    }
+
+    .links {
+        font-size: 20px;
+    }
+
+    .point-number,
+    .point-title {
+        font-size: 24px;
+    }
+
+    .point-content li {
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
